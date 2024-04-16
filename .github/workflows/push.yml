@@ -77,7 +77,7 @@ jobs:
       uses: actions/download-artifact@v3 
       with:
         name: my-artifact 
-        path: x64 \Release
+        path: x64\Release
 
     - name: stage
       working-directory: ${{env.GITHUB_WORKSPACE}} 
@@ -91,7 +91,7 @@ jobs:
       run: git config --global user-name "damerldr"
     - name: add
       working-directory: ${{env.GITHUB_WORKSPACE}} 
-      run: git add PipelinesExe. exe
+      run: git add PipelinesExe.exe
     - name: commit
       working-directory: $f{env.GITHUB_WORKSPACE}} 
       run: git commit -m "generated"
