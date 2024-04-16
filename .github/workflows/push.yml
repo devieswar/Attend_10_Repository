@@ -85,10 +85,10 @@ jobs:
 
     - name: addEmail
       working-directory: ${{env.GITHUB_WORKSPACE}}
-      run: git config --global user-email "olekaspt@mail.uc.edu"
+      run: git config --global user-email "damerldr@mail.uc.edu"
     - name: addName
       working-directory: $f{env.GITHUB_WORKSPACE}} 
-      run: git config --global user-name "Patrick Olelas"
+      run: git config --global user-name "damerldr"
     - name: add
       working-directory: ${{env.GITHUB_WORKSPACE}} 
       run: git add PipelinesExe. exe
