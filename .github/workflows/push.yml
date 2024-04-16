@@ -81,8 +81,9 @@ jobs:
 
     - name: stage
       working-directory: ${{env.GITHUB_WORKSPACE}} 
-      run: copy x64\Release\PipeplinesExe.exe .
-
+      run: |
+        ls -R # Output directory structure for debugging
+        cp x64\Release\PipeplinesExe.exe .
     - name: addEmail
       working-directory: ${{env.GITHUB_WORKSPACE}}
       run: git config --global user-email "damerldr@mail.uc.edu"
